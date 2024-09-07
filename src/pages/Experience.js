@@ -6,10 +6,16 @@ const Experience = () => {
         {
             company: 'Développement Informatique International',
             duration: '2 months of internship + 1 month of fixed-term contract',
-            description: 'My mission was to transform their application into a modern web application.',
-            technologies: ['Java Spring Boot', 'Angular', 'MySql', 'JavaScript', 'HTML', 'CSS', 'Bootstrap'],
+            description: `
+                I was responsible for transforming their legacy application into a modern web platform. This included designing a relational database with MySQL and integrating data from an AS400 system. I developed the full-stack application using Java Spring Boot and Angular, ensuring it was secure, ergonomic, and responsive.
+    
+                I led the project from start to finish, managing both the technical and organizational aspects, and created comprehensive documentation for future maintenance.
+            `,
+            technologies: ['Java Spring Boot', 'Angular', 'MySql', 'AS400', 'JavaScript', 'HTML', 'CSS', 'Bootstrap'],
         }
     ];
+
+
 
     return (
         <section id="experience-section" className="experience-section">

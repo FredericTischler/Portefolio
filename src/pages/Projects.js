@@ -7,39 +7,39 @@ const Projects = () => {
     const projectList = [
         {
             name: 'Turing Machine',
-            description: 'An interactive simulation of a Turing machine with a graphical interface.',
+            description: 'An interactive simulation of a Turing machine with a graphical java swing interface, using MVC design pattern.',
             technologies: ['Java'],
-            githubLink: 'https://github.com/Kheesi/Turing-Machine'
+            githubLink: 'https://github.com/FredericTischler/Turing-Machine'
         },
         {
             name: 'Groupie Tracker',
             description: 'A website utilizing an API to display information about artists and their concerts.',
             technologies: ['API', 'JavaScript', 'HTML/CSS', 'Go'],
-            githubLink: 'https://github.com/Kheesi/Groupie-tracker'
+            githubLink: 'https://github.com/FredericTischler/Groupie-tracker'
         },
         {
             name: 'Lem-in',
             description: 'A pathfinding algorithm where ants must find the shortest route through a network of tunnels while following movement constraints.',
             technologies: ['Go'],
-            githubLink: 'https://github.com/Kheesi/Lem-in'
+            githubLink: 'https://github.com/FredericTischler/Lem-in'
         },
         {
             name: 'Words Shared',
             description: 'A C program that lists and displays words shared between multiple files, sorted by occurrence in descending order and lexicographically.',
             technologies: ['C'],
-            githubLink: 'https://github.com/Kheesi/Words-Shared'
+            githubLink: 'https://github.com/FredericTischler/Words-Shared'
         },
         {
             name: 'Graph',
             description: 'A Python project analyzing and testing several algorithms related to graph theory.',
             technologies: ['Python'],
-            githubLink: 'https://github.com/Kheesi/Projet-Graphe'
+            githubLink: 'https://github.com/FredericTischler/Projet-Graphe'
         },
         {
             name: 'System Client/Server',
             description: 'A client-server system where the client sends bash commands to the server, which executes them on dedicated threads and returns the result.',
             technologies: ['C'],
-            githubLink: 'https://github.com/Kheesi/Server-client'
+            githubLink: 'https://github.com/FredericTischler/Server-client'
         }
     ];
 

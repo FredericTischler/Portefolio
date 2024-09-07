@@ -1,11 +1,22 @@
 /* Section des projets avec fond bleu marine sombre */
 .projects-section {
-    padding: 50px 20px;
-    background-color: #1a2b47;
+    padding: 25px 10px;
+    background-color: #0a3d62;
     /* Dark navy blue background */
     text-align: center;
     color: #d1d1e0;
     /* Light color for text */
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #d1d1e0;
+    position: relative;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 /* Container des projets */
@@ -15,39 +26,56 @@
     flex-wrap: wrap;
     gap: 30px;
     margin-top: 40px;
-    max-width: 1200px;
+    max-width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
 
-/* Style des cartes de projet avec un fond bleu plus clair */
+/* Style des cartes de projet sans ombres ni bordures */
 .project-card {
-    background-color: #22354f;
-    /* Slightly lighter navy blue */
+    background-color: #0a3d62;
+    /* Same as the page */
     border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-    padding: 20px;
-    max-width: 320px;
+    padding: 10px;
+    max-width: 48%;
     text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
     overflow: hidden;
     z-index: 1;
+    transition: transform 0.3s ease;
 }
 
-/* Effet hover sur la carte */
+/* Effet lumineux sur toute la carte au hover */
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 60%, rgba(255, 255, 255, 0.15) 100%);
+    transition: opacity 0.4s ease;
+    opacity: 0;
+    z-index: -1;
+    /* Behind the content */
+}
+
+.project-card:hover::before {
+    opacity: 1;
+}
+
 .project-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
 }
 
 /* Titre du projet avec une couleur plus claire */
 .project-card h3 {
-    font-size: 1.6rem;
-    color: #ff6347;
+    font-size: 1.5rem;
+    color: #ff793f;
     /* Light color for text */
     margin-bottom: 15px;
     font-weight: bold;
+    text-align: center;
 }
 
 /* Description du projet */
@@ -59,7 +87,7 @@
     line-height: 1.6;
 }
 
-/* Technologies section avec fond gris clair */
+/* Technologies section */
 .technologies {
     margin-top: 15px;
     display: flex;
@@ -70,13 +98,11 @@
 .tech-badge {
     background-color: #2e4d6e;
     /* Darker blue for badges */
-    color: #d1d1e0;
+    color: #c0c0c0 !important;
     padding: 3px 8px;
     border-radius: 10px;
     font-size: 0.8rem;
     font-weight: 500;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
 }
 
 .tech-badge:hover {
@@ -100,26 +126,22 @@
     color: #ff6347;
 }
 
-/* Animation de fond dynamique pour la carte */
-.project-card::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent);
-    transition: transform 0.6s ease;
-}
-
-.project-card:hover::before {
-    transform: rotate(45deg);
-}
-
-/* Responsive pour les petits écrans */
 @media (max-width: 768px) {
     .projects-container {
         flex-direction: column;
         gap: 20px;
+    }
+
+    .project-card {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .project-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .project-card p {
+        font-size: 0.9rem;
     }
 }

@@ -9,11 +9,11 @@ const Home = () => {
             <section id="aboutme-section">
                 <AboutMe />
             </section>
-            <section id="experience-section">
-                <Experience />
-            </section>
             <section id="projects-section">
                 <Projects />
+            </section>
+            <section id="experience-section">
+                <Experience />
             </section>
         </div>
     );

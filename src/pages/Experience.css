@@ -1,9 +1,11 @@
 /* Section for Experience with dark navy blue background */
 .experience-section {
     padding: 50px 20px;
-    background-color: #1a2b47;
+    background-color: #0a3d62;
+    /* Dark navy blue */
     text-align: center;
-    color: #ff6347;
+    color: #c8d6e5;
+    /* Light blue-gray color for text */
 }
 
 /* Container for Experience */
@@ -13,35 +15,64 @@
     flex-wrap: wrap;
     gap: 30px;
     margin-top: 40px;
-    max-width: 1200px;
+    max-width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
 
-/* Style for Experience card */
+/* Style des cartes d'expérience sans ombres ni bordures */
 .experience-card {
-    background-color: #22354f;
+    background-color: #0a3d62;
+    /* Same as the page */
     border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
     padding: 20px;
-    max-width: 320px;
+    max-width: 100%;
     text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
     overflow: hidden;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+/* Effet lumineux sur toute la carte au hover */
+.experience-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 60%, rgba(255, 255, 255, 0.15) 100%);
+    transition: opacity 0.4s ease;
+    opacity: 0;
+    z-index: -1;
+    /* Behind the content */
+}
+
+.experience-card:hover::before {
+    opacity: 1;
 }
 
 .experience-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
 }
 
 /* Styling the paragraph text inside the Experience card */
 .experience-card p {
-    font-size: 1.1rem;
-    line-height: 1.8;
+    font-size: 1rem;
+    line-height: 1.6;
     color: #c0c0c0;
+    /* Light color for readability */
     margin-bottom: 15px;
+}
+
+.experience-card h3 {
+    font-size: 1.5rem;
+    color: #ff793f;
+    /* Light color for text */
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-align: center;
 }
 
 /* Technologies section */
@@ -55,15 +86,35 @@
 /* Style for technology badges */
 .tech-badge {
     background-color: #2e4d6e;
-    color: #d1d1e0;
+    /* Darker blue for badges */
+    color: #c0c0c0 !important;
     padding: 3px 8px;
     border-radius: 10px;
     font-size: 0.8rem;
     font-weight: 500;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .tech-badge:hover {
-    background-color: #ff6347;
+    background-color: #ff793f;
     color: white;
+}
+
+@media (max-width: 768px) {
+    .experience-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .experience-card {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .experience-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .experience-card p {
+        font-size: 0.9rem;
+    }
 }

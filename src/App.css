@@ -13,7 +13,7 @@
 .left-column {
   width: 25%;
   /* Left column takes 25% of the width */
-  background-color: #1a2b47;
+  background-color: #0a3d62;
   /* Dark gray for contrast */
   height: 100vh;
   /* Full height of the viewport */
@@ -38,7 +38,7 @@
   overflow-y: auto;
   /* Ensure the right column can scroll */
   padding: 20px;
-  background-color: #1a2b47;
+  background-color: #0a3d62;
   /* Dark navy background */
   color: #d1d1e0;
   /* Light text color */
@@ -48,4 +48,22 @@
   /* Start content at the top */
   align-items: center;
   /* Center the content horizontally */
+}
+
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left-column {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .right-column {
+    margin-left: 0;
+    width: 100%;
+  }
 }

@@ -2,14 +2,14 @@
 .left-column {
     width: 25%;
     /* Fixed at 25% of the page width */
-    background-color: #1a2b47;
+    background-color: #0a3d62;
     /* Dark gray background */
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 0px;
     position: fixed;
     left: 0;
     top: 0;
@@ -24,17 +24,18 @@
 }
 
 .personal-info h1 {
-    font-size: 1.8rem;
-    color: #d1d1e0;
+    font-size: 2.4rem;
+    color: #c0c0c0;
     /* Light text color */
     margin: 0;
 }
 
 .personal-info h2 {
-    font-size: 1.2rem;
-    color: #ff6347;
+    font-size: 1.7rem;
+    color: #ff793f;
     /* Accent color */
     margin: 5px 0 0;
+    font-weight: bold;
 }
 
 /* Navigation links */
@@ -49,16 +50,16 @@
 }
 
 .nav-links a {
-    color: #d1d1e0;
+    color: #c0c0c0;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     transition: color 0.3s ease;
     padding: 10px;
     text-align: center;
 }
 
 .nav-links a:hover {
-    color: #ff6347;
+    color: #ff793f;
 }
 
 /* Social links in a row */
@@ -70,11 +71,36 @@
 }
 
 .social-links a {
-    color: #d1d1e0;
+    color: #c0c0c0;
     font-size: 1.5rem;
     transition: color 0.3s ease;
 }
 
 .social-links a:hover {
-    color: #ff6347;
+    color: #ff793f;
+}
+
+@media (max-width: 768px) {
+    .left-column {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        position: relative;
+    }
+
+    .personal-info h1 {
+        font-size: 1.8rem;
+    }
+
+    .personal-info h2 {
+        font-size: 1.4rem;
+    }
+
+    .nav-links a {
+        font-size: 1.2rem;
+    }
+
+    .social-links a {
+        font-size: 1.2rem;
+    }
 }
