@@ -1,0 +1,125 @@
+/* Section des projets avec fond bleu marine sombre */
+.projects-section {
+    padding: 50px 20px;
+    background-color: #1a2b47;
+    /* Dark navy blue background */
+    text-align: center;
+    color: #d1d1e0;
+    /* Light color for text */
+}
+
+/* Container des projets */
+.projects-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Style des cartes de projet avec un fond bleu plus clair */
+.project-card {
+    background-color: #22354f;
+    /* Slightly lighter navy blue */
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    max-width: 320px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* Effet hover sur la carte */
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Titre du projet avec une couleur plus claire */
+.project-card h3 {
+    font-size: 1.6rem;
+    color: #ff6347;
+    /* Light color for text */
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Description du projet */
+.project-card p {
+    color: #c0c0c0;
+    /* Slightly lighter for description */
+    font-size: 1rem;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Technologies section avec fond gris clair */
+.technologies {
+    margin-top: 15px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.tech-badge {
+    background-color: #2e4d6e;
+    /* Darker blue for badges */
+    color: #d1d1e0;
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.tech-badge:hover {
+    background-color: #ff6347;
+    color: white;
+}
+
+/* Style pour le lien GitHub */
+.github-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #c0c0c0;
+    font-size: 1rem;
+    text-decoration: underline;
+    z-index: 10;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.github-link:hover {
+    color: #ff6347;
+}
+
+/* Animation de fond dynamique pour la carte */
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent);
+    transition: transform 0.6s ease;
+}
+
+.project-card:hover::before {
+    transform: rotate(45deg);
+}
+
+/* Responsive pour les petits écrans */
+@media (max-width: 768px) {
+    .projects-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

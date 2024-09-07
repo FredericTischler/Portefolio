@@ -1,0 +1,101 @@
+/* Section for About Me with dark navy blue background */
+.about-me-section {
+    padding: 50px 20px;
+    background-color: #1a2b47;
+    /* Dark navy blue */
+    text-align: center;
+    color: #d1d1e0;
+    /* Light color for text */
+}
+
+/* Container for About Me */
+.about-me-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Style for About Me card */
+.about-me-card {
+    background-color: #22354f;
+    /* Slightly lighter navy blue */
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    max-width: 800px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover effect on the About Me card */
+.about-me-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Styling the paragraph text inside the About Me card */
+.about-me-card p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #c0c0c0;
+    /* Lighter color for readability */
+    margin-bottom: 15px;
+}
+
+/* Title styling for About Me section */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #d1d1e0;
+    /* Light text color */
+    position: relative;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Underline for title */
+.section-title::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 4px;
+    background-color: #ff6347;
+    border-radius: 2px;
+    transition: width 0.4s ease;
+}
+
+/* Hover effect for title underline */
+.section-title:hover::after {
+    width: 150px;
+}
+
+/* Responsive design for About Me section */
+@media (max-width: 768px) {
+    .about-me-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .about-me-card {
+        max-width: 100%;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-title::after {
+        width: 100px;
+    }
+}

@@ -1,38 +1,51 @@
-.App {
-  text-align: center;
+/* Main layout container with two columns */
+.layout {
+  display: flex;
+  height: 100vh;
+  /* Full viewport height */
+  width: 100%;
+  /* Full width of the page */
+  overflow: hidden;
+  /* Prevent overflow on the page */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Left column takes up 25% of the width */
+.left-column {
+  width: 25%;
+  /* Left column takes 25% of the width */
+  background-color: #1a2b47;
+  /* Dark gray for contrast */
+  height: 100vh;
+  /* Full height of the viewport */
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Right column takes up 75% of the width */
+.right-column {
+  margin-left: 25%;
+  /* Create space for the left column */
+  width: 75%;
+  /* Right column takes up the rest of the space */
+  height: 100vh;
+  /* Full height of the viewport */
+  overflow-y: auto;
+  /* Ensure the right column can scroll */
+  padding: 20px;
+  background-color: #1a2b47;
+  /* Dark navy background */
+  color: #d1d1e0;
+  /* Light text color */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* Start content at the top */
+  align-items: center;
+  /* Center the content horizontally */
 }

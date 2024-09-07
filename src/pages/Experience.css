@@ -1,0 +1,69 @@
+/* Section for Experience with dark navy blue background */
+.experience-section {
+    padding: 50px 20px;
+    background-color: #1a2b47;
+    text-align: center;
+    color: #ff6347;
+}
+
+/* Container for Experience */
+.experience-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Style for Experience card */
+.experience-card {
+    background-color: #22354f;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    max-width: 320px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.experience-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Styling the paragraph text inside the Experience card */
+.experience-card p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #c0c0c0;
+    margin-bottom: 15px;
+}
+
+/* Technologies section */
+.technologies {
+    margin-top: 15px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+/* Style for technology badges */
+.tech-badge {
+    background-color: #2e4d6e;
+    color: #d1d1e0;
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tech-badge:hover {
+    background-color: #ff6347;
+    color: white;
+}
