@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-import LeftColumn from './components/LeftColumn';  // The updated LeftColumn
+import LeftColumn from './components/LeftColumn';
 import Home from './pages/Home';
 import AboutMe from './pages/AboutMe';
 import Projects from './pages/Projects';

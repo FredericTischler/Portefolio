@@ -19,6 +19,7 @@ const LeftColumn = () => {
                     <li><a href="#aboutme-section">About Me</a></li>
                     <li><a href="#projects-section">Projects</a></li>
                     <li><a href="#experience-section">Experiences</a></li>
+                    <li><a href="#softskills-section">Soft Skills</a></li>
 
                 </ul>
             </nav>
