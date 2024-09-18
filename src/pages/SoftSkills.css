@@ -1,0 +1,52 @@
+/* Styles généraux */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    /* Empêche le scroll global */
+}
+
+.softskills-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.section-title {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.softskills-container {
+    display: flex;
+    justify-content: center;
+    /* Centre horizontalement */
+    align-items: center;
+    /* Centre verticalement si nécessaire */
+    width: 100%;
+    /* Le conteneur prend toute la largeur de la page */
+}
+
+.centered-iframe {
+    border: none;
+    /* Supprimer la bordure par défaut */
+    overflow: hidden;
+    /* Empêche le scroll à l'intérieur de l'iframe */
+}
+
+/* Désactive les barres de défilement dans l'iframe */
+.no-scroll {
+    scrollbar-width: none;
+    /* Pour Firefox */
+    -ms-overflow-style: none;
+    /* Pour Internet Explorer et Edge */
+}
+
+.no-scroll::-webkit-scrollbar {
+    display: none;
+    /* Pour Chrome, Safari et Opera */
+}

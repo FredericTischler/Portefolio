@@ -1,4 +1,5 @@
 import React from 'react';
+import './SoftSkills.css'; // Assurez-vous de lier le fichier CSS
 
 const SoftSkills = () => {
     return (
@@ -10,6 +11,7 @@ const SoftSkills = () => {
                     width="100%"
                     height="1500px"
                     title="Frederic Tischler's CV"
+                    className="centered-iframe no-scroll"
                 ></iframe>
             </div>
         </section>
