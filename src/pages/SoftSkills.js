@@ -8,7 +8,7 @@ const SoftSkills = () => {
                 <iframe
                     src="https://cv.emage-me.com/me/frederic-tischler"
                     width="100%"
-                    height="500px"
+                    height="1500px"
                     title="Frederic Tischler's CV"
                 ></iframe>
             </div>

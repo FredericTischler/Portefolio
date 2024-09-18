@@ -26,7 +26,7 @@ const LeftColumn = () => {
 
             {/* Social Media Links */}
             <div className="social-links">
-                <a href="https://github.com/Kheesi" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/FredericTischler" target="_blank" rel="noopener noreferrer">
                     <FontAwesomeIcon icon={faGithub} />
                 </a>
                 <a href="https://www.linkedin.com/in/fr%C3%A9d%C3%A9ric-tischler-64b588305/" target="_blank" rel="noopener noreferrer">
