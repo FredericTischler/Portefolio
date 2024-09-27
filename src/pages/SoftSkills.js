@@ -1,5 +1,5 @@
 import React from 'react';
-import './SoftSkills.css'; // Assurez-vous de lier le fichier CSS
+import './SoftSkills.css';
 
 const SoftSkills = () => {
     return (
@@ -9,9 +9,10 @@ const SoftSkills = () => {
                 <iframe
                     src="https://cv.emage-me.com/me/frederic-tischler"
                     width="100%"
-                    height="1500px"
+                    height="750px"
                     title="Frederic Tischler's CV"
                     className="centered-iframe no-scroll"
+                    scrolling="no"
                 ></iframe>
             </div>
         </section>
