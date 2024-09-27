@@ -27,7 +27,7 @@ body {
     /* Centre horizontalement */
     align-items: center;
     /* Centre verticalement si nécessaire */
-    width: 100%;
+    width: 80%;
     /* Le conteneur prend toute la largeur de la page */
 }
 
