@@ -14,7 +14,7 @@ const Projects = () => {
     const projectList = [
         {
             name: 'Turing Machine',
-            description: 'An interactive simulation of a Turing machine with a graphical java swing interface, using MVC design pattern.',
+            description: 'An interactive simulation of a Turing machine, implemented with a graphical Java Swing interface. The simulation allows users to visualize and manipulate the tape, head movements, and state transitions of the Turing machine in real-time. The project is structured using the MVC design pattern.',
             technologies: ['Java'],
             githubLink: 'https://github.com/FredericTischler/Turing-Machine',
             imageUrl: turingImage,
@@ -42,7 +42,7 @@ const Projects = () => {
         },
         {
             name: 'Graph',
-            description: 'A Python project analyzing and testing several algorithms related to graph theory.',
+            description: 'A Python project analyzing and testing several algorithms related to graph theory, with a graphic visual of statistic',
             technologies: ['Python'],
             githubLink: 'https://github.com/FredericTischler/Projet-Graphe',
             imageUrl: graphImage,
