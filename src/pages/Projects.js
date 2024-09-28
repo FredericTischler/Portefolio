@@ -42,7 +42,7 @@ const Projects = () => {
         },
         {
             name: 'Graph',
-            description: 'A Python project analyzing and testing several algorithms related to graph theory, with a graphic visual of statistic',
+            description: 'A Python project focused on analyzing and testing various shortest path algorithms in graph theory. The project includes a graphical representation of the graphs and their paths, along with visualizations of performance metrics and statistics to compare the efficiency of each algorithm.',
             technologies: ['Python'],
             githubLink: 'https://github.com/FredericTischler/Projet-Graphe',
             imageUrl: graphImage,
