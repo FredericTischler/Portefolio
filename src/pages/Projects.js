@@ -21,7 +21,7 @@ const Projects = () => {
         },
         {
             name: 'Groupie Tracker',
-            description: 'A website utilizing an API to display information about artists and their concerts.',
+            description: 'A website utilizing an API to display information about artists and their concerts. Searchbar, filters and geolocalization features are implemented.',
             technologies: ['API', 'JavaScript', 'HTML/CSS', 'Go'],
             githubLink: 'https://github.com/FredericTischler/Groupie-tracker',
             imageUrl: groupieImage,
