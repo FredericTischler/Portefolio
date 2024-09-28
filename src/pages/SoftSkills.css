@@ -26,9 +26,8 @@ body {
     justify-content: center;
     /* Centre horizontalement */
     align-items: center;
-    /* Centre verticalement si nécessaire */
-    width: 80%;
-    /* Le conteneur prend toute la largeur de la page */
+    width: 90%;
+    /* Le conteneur prend 80% de la largeur de la page */
 }
 
 .centered-iframe {
@@ -36,6 +35,9 @@ body {
     /* Supprimer la bordure par défaut */
     overflow: hidden;
     /* Empêche le scroll à l'intérieur de l'iframe */
+    width: 100%;
+    height: 1150px;
+    /* Set a reasonable default height for desktop */
 }
 
 /* Désactive les barres de défilement dans l'iframe */
@@ -49,4 +51,44 @@ body {
 .no-scroll::-webkit-scrollbar {
     display: none;
     /* Pour Chrome, Safari et Opera */
+}
+
+/* Media Queries for Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+    .softskills-container {
+        width: 100%;
+        /* Take full width on smaller screens */
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+        /* Adjust title size for smaller screens */
+        margin-bottom: 15px;
+    }
+
+    .centered-iframe {
+        width: 100%;
+        height: 1150px;
+        /* Reduce the height of the iframe on mobile */
+    }
+}
+
+/* Media Queries for Extra Small Devices (max-width: 480px) */
+@media (max-width: 480px) {
+    .softskills-section {
+        padding: 10px;
+        /* Reduce padding on extra small screens */
+    }
+
+    .centered-iframe {
+        height: 1150px;
+        /* Further reduce iframe height on extra small screens */
+    }
+
+    .section-title {
+        font-size: 1.2rem;
+        /* Further reduce title size */
+    }
 }
