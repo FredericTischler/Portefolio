@@ -151,8 +151,12 @@
         max-width: 100%;
     }
 
+    .project-content h3 {
+        text-align: center;
+    }
+
     .project-image {
-        width: 250px;
+        width: 300px;
         /* Set a fixed width for the image */
         height: 150px;
         /* Maintain aspect ratio */
