@@ -19,7 +19,7 @@
     align-items: center;
     /* Ensure cards are vertically aligned in the center */
     gap: 20px;
-    max-width: 100%;
+    width: 100%;
     margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
