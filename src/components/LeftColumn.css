@@ -59,6 +59,40 @@
     font-weight: bold;
 }
 
+/* Skills icons container */
+.skills-icons {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allows icons to wrap onto the next line */
+    justify-content: center;
+    /* Aligns the icons in the center */
+    gap: 10px;
+    /* Spacing between icons */
+    padding: 10px;
+}
+
+.skill-icon {
+    width: 38px;
+    /* Size of the icons */
+    height: 38px;
+    fill: #ff793f;
+    object-fit: contain;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .skill-icon {
+        width: 30px;
+        /* Reduce icon size on mobile */
+        height: 30px;
+    }
+}
+
+.skill-icon:hover {
+    transform: scale(1.1);
+    /* Add a hover effect */
+}
+
 /* Navigation Links */
 .nav-links ul {
     list-style: none;
@@ -85,9 +119,7 @@
 /* Social Media Links */
 .social-links {
     display: flex;
-    justify-content: space-evenly;
-    /* Centers the icons */
-    align-items: center;
+    justify-content: center;
     gap: 20px;
     /* Adds spacing between the icons */
     width: 100%;
