@@ -82,9 +82,9 @@
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
     .skill-icon {
-        width: 30px;
+        width: 23px;
         /* Reduce icon size on mobile */
-        height: 30px;
+        height: 23px;
     }
 }
 
