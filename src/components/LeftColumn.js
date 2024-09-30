@@ -64,24 +64,24 @@ const LeftColumn = ({ isLoggedIn }) => {
                 <div className="personal-info">
                     <h1>Frédéric Tischler</h1>
                     <h2>Full Stack Developer</h2>
+                    {/* Languages and Frameworks Logos */}
+                    <div className="skills-icons">
+                        <img src={javaIcon} alt="Java" className="skill-icon" />
+                        <img src={GolangIcon} alt="GoLang" className="skill-icon" />
+                        <img src={RustIcon} alt="Rust" className="skill-icon" />
+                        <img src={cIcon} alt="C" className="skill-icon" />
+                        <img src={PythonIcon} alt="Python" className="skill-icon" />
+                        <img src={JsIcon} alt="JavaScript" className="skill-icon" />
+                        <img src={Html5Icon} alt="HTML5" className="skill-icon" />
+                        <img src={Css3Icon} alt="CSS3" className="skill-icon" />
+                        <img src={ReactIcon} alt="React" className="skill-icon" />
+                        <img src={AngularIcon} alt="Angular" className="skill-icon" />
+                        <img src={MySqlIcon} alt="MySql" className="skill-icon" />
+                        <img src={sqliteIcon} alt="Sqlite" className="skill-icon" />
+                    </div>
                 </div>
 
-                {/* Languages and Frameworks Logos */}
-                <div className="skills-icons">
-                    <img src={javaIcon} alt="Java" className="skill-icon" />
-                    <img src={GolangIcon} alt="GoLang" className="skill-icon" />
-                    <img src={RustIcon} alt="Rust" className="skill-icon" />
-                    <img src={cIcon} alt="C" className="skill-icon" />
-                    <img src={PythonIcon} alt="Python" className="skill-icon" />
-                    <img src={JsIcon} alt="JavaScript" className="skill-icon" />
-                    <img src={Html5Icon} alt="HTML5" className="skill-icon" />
-                    <img src={Css3Icon} alt="CSS3" className="skill-icon" />
-                    <img src={ReactIcon} alt="React" className="skill-icon" />
-                    <img src={AngularIcon} alt="Angular" className="skill-icon" />
-                    <img src={MySqlIcon} alt="MySql" className="skill-icon" />
-                    <img src={sqliteIcon} alt="Sqlite" className="skill-icon" />
 
-                </div>
 
                 {/* Navigation Links */}
                 <nav className="nav-links">
