@@ -4,24 +4,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import JsIcon from '../../icons/javascript.svg';
-import ReactIcon from '../../icons/react.svg';
-import AngularIcon from '../../icons/angular.svg';
-import PythonIcon from '../../icons/python.svg';
-import GolangIcon from '../../icons/go.svg';
-import RustIcon from '../../icons/rust.svg';
-import Html5Icon from '../../icons/html5.svg';
-import Css3Icon from '../../icons/css3.svg';
-import MySqlIcon from '../../icons/mysql.svg';
-import sqliteIcon from '../../icons/sqlite.svg';
-import cIcon from '../../icons/c.svg';
-import javaIcon from '../../icons/java.svg'
+
 
 
 
 const LeftColumn = ({ isLoggedIn }) => {
     const [isOpen, setIsOpen] = useState(true);  // Open by default on desktop
     const [isMobile, setIsMobile] = useState(false);  // Detect if it's mobile
+    
 
     // Function to toggle the sidebar visibility
     const toggleSidebar = () => {
@@ -64,8 +54,9 @@ const LeftColumn = ({ isLoggedIn }) => {
                 <div className="personal-info">
                     <h1>Frédéric Tischler</h1>
                     <h2>Full Stack Developer</h2>
+
                     {/* Languages and Frameworks Logos */}
-                    <div className="skills-icons">
+                    {/* <div className="skills-icons">
                         <img src={javaIcon} alt="Java" className="skill-icon" />
                         <img src={GolangIcon} alt="GoLang" className="skill-icon" />
                         <img src={RustIcon} alt="Rust" className="skill-icon" />
@@ -78,7 +69,7 @@ const LeftColumn = ({ isLoggedIn }) => {
                         <img src={AngularIcon} alt="Angular" className="skill-icon" />
                         <img src={MySqlIcon} alt="MySql" className="skill-icon" />
                         <img src={sqliteIcon} alt="Sqlite" className="skill-icon" />
-                    </div>
+                    </div> */}
                 </div>
 
 

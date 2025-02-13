@@ -1,7 +1,34 @@
 import React from 'react';
 import './AboutMe.css';
+import JsIcon from '../../icons/javascript.svg';
+import ReactIcon from '../../icons/react.svg';
+import AngularIcon from '../../icons/angular.svg';
+import PythonIcon from '../../icons/python.svg';
+import GolangIcon from '../../icons/go.svg';
+import RustIcon from '../../icons/rust.svg';
+import Html5Icon from '../../icons/html5.svg';
+import Css3Icon from '../../icons/css3.svg';
+import MySqlIcon from '../../icons/mysql.svg';
+import sqliteIcon from '../../icons/sqlite.svg';
+import cIcon from '../../icons/c.svg';
+import javaIcon from '../../icons/java.svg'
+import LogoWall from '../../components/logowall/logowall';
 
 const AboutMe = () => {
+    const logoImgs = [
+        { imgUrl: JsIcon, altText: "JavaScript" },
+        { imgUrl: AngularIcon, altText: "React Bits Logo" },
+        { imgUrl: ReactIcon, altText: "React Bits Logo" },
+        { imgUrl: PythonIcon, altText: "React Bits Logo" },
+        { imgUrl: GolangIcon, altText: "React Bits Logo" },
+        { imgUrl: RustIcon, altText: "React Bits Logo" },
+        { imgUrl: Html5Icon, altText: "React Bits Logo" },
+        { imgUrl: Css3Icon, altText: "React Bits Logo" },
+        { imgUrl: MySqlIcon, altText: "React Bits Logo" },
+        { imgUrl: sqliteIcon, altText: "React Bits Logo" },
+        { imgUrl: javaIcon, altText: "React Bits Logo" },
+        { imgUrl: cIcon, altText: "React Bits Logo" }
+      ];
     return (
         <section id="about-me" className="about-me-section">
             <h2 className="section-title">About Me</h2>
@@ -13,6 +40,17 @@ const AboutMe = () => {
                         Driven by a deep passion for technology, I focus on creating dynamic, user-centered applications that not only meet technical requirements but also enhance the user experience.
                     </p>
                 </div>
+            </div>
+            <div style={{ height: '300px', width: '97%', position: 'absolute' }}>
+                        <LogoWall
+                            items={logoImgs}
+                            direction='horizontal'
+                            pauseOnHover={false}
+                            size='clamp(5rem, 2rem + 10vmin, 15rem)'
+                            duration='30s'
+                            bgColor='transparent'
+                            bgAccentColor='transparent'
+                        />  
             </div>
         </section>
     );
