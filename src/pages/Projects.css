@@ -1,7 +1,6 @@
 /* Project Section Styles */
 .projects-section {
     padding: 20px 0;
-    background-color: #0a3d62;
 }
 
 .section-title {
@@ -29,7 +28,6 @@
 /* Project card with image on the left and text on the right */
 .project-card {
     display: flex;
-    background-color: #0a3d62;
     border-radius: 12px;
     padding: 20px;
     width: 100%;
@@ -113,7 +111,6 @@
 }
 
 .tech-badge {
-    background-color: #2e4d6e;
     color: #c0c0c0 !important;
     padding: 3px 8px;
     border-radius: 10px;

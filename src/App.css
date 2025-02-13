@@ -1,5 +1,6 @@
 /* Main layout container with two columns */
 .layout {
+  position: relative; /* Assurez-vous que le layout est positionné relativement pour que les enfants absolus soient positionnés correctement */
   display: flex;
   height: 100vh;
   /* Full viewport height */
@@ -9,11 +10,20 @@
   /* Prevent overflow on the page */
 }
 
+.aurora-container {
+  position: absolute; /* Positionner Aurora en absolu */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Assurez-vous qu'il est derrière les autres éléments */
+}
+
 /* Left column takes up 25% of the width */
 .left-column {
+  position: relative; /* Assurez-vous que les colonnes sont positionnées relativement */
+  z-index: 1; /* Assurez-vous qu'elles sont au-dessus de l'Aurora */
   width: 25%;
-  /* Left column takes 25% of the width */
-  background-color: #0a3d62;
   /* Dark gray for contrast */
   height: 100vh;
   /* Full height of the viewport */
@@ -22,13 +32,14 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  position: fixed;
   left: 0;
   top: 0;
 }
 
 /* Right column takes up 75% of the width */
 .right-column {
+  position: relative; /* Assurez-vous que les colonnes sont positionnées relativement */
+  z-index: 1; /* Assurez-vous qu'elles sont au-dessus de l'Aurora */
   margin-left: 25%;
   /* Create space for the left column */
   width: 75%;
@@ -38,7 +49,6 @@
   overflow-y: auto;
   /* Ensure the right column can scroll */
   padding: 20px;
-  background-color: #0a3d62;
   /* Dark navy background */
   color: #d1d1e0;
   /* Light text color */
@@ -67,3 +77,9 @@
     width: 100%;
   }
 }
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Assurez-vous que toutes les autres règles CSS héritent de cette police */

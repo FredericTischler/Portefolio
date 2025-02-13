@@ -1,7 +1,6 @@
 /* Default styles for LeftColumn */
 .left-column {
     width: 25%;
-    background-color: #0a3d62;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -45,6 +44,10 @@
 
 .toggle-button:hover {
     background-color: #ff6347;
+}
+
+.personal-info {
+    margin-top: 20px;
 }
 
 /* Personal Info */

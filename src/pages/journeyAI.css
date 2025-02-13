@@ -1,7 +1,6 @@
 /* General section styles */
 .journey-ai-section {
     padding: 20px 0;
-    background-color: #0a3d62;
     color: white;
 }
 
@@ -49,7 +48,6 @@
     justify-content: center;
     padding-left: 20px;
     flex: 1;
-    background-color: #0a3d62;
     border-radius: 12px;
     padding: 20px;
     width: 100%;
@@ -102,7 +100,6 @@
 .skills-section {
     margin-top: 20px;
     text-align: center;
-    background-color: #0a3d62;
     padding: 50px 0;
 }
 
@@ -120,7 +117,6 @@
 /* Individual skill */
 .skill {
     width: 45%;
-    background-color: #0a3d62;
     border-radius: 12px;
     padding: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;

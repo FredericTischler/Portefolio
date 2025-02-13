@@ -1,6 +1,5 @@
 /* Section for About Me with dark navy blue background */
 .about-me-section {
-    background-color: #0a3d62;
     /* Dark navy blue */
     text-align: center;
     color: #c8d6e5;
@@ -20,7 +19,6 @@
 
 /* About Me card with the same background color as the page, no border or shadow */
 .about-me-card {
-    background-color: #0a3d62;
     /* Same as the page */
     border-radius: 12px;
     padding: 10px;

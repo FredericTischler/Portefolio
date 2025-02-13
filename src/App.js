@@ -7,12 +7,17 @@ import AboutMe from './pages/AboutMe';
 import Projects from './pages/Projects';
 import NotFound from './pages/NotFound';
 import ErrorBoundary from './components/ErrorBoundary';
+import Aurora from './components/bakcground';
 
 function App() {
   return (
     <ErrorBoundary>
       <Router>
         <div className="layout">  {/* Flexbox layout container */}
+          <Aurora 
+          colorStops={["#00c6ff", "#0072ff", "#001eff"]}
+          speed={0.5}
+          />
           <LeftColumn />
           <div className="right-column">
             <Routes>

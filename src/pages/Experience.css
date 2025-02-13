@@ -1,7 +1,6 @@
 /* Section for Experience with dark navy blue background */
 .experience-section {
     padding: 50px 20px;
-    background-color: #0a3d62;
     /* Dark navy blue */
     text-align: center;
     color: #c8d6e5;
@@ -22,7 +21,6 @@
 
 /* Style des cartes d'expérience sans ombres ni bordures */
 .experience-card {
-    background-color: #0a3d62;
     /* Same as the page */
     border-radius: 12px;
     padding: 20px;
@@ -86,7 +84,6 @@
 
 /* Style for technology badges */
 .tech-badge {
-    background-color: #2e4d6e;
     /* Darker blue for badges */
     color: #c0c0c0 !important;
     padding: 3px 8px;

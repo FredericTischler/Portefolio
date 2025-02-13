@@ -2,7 +2,6 @@ import React from 'react';
 import Projects from './Projects';
 import AboutMe from './AboutMe';
 import Experience from './Experience'
-import SoftSkills from './SoftSkills'
 import JourneyAI from './JourneyAI'
 
 const Home = () => {
@@ -19,9 +18,6 @@ const Home = () => {
             </section>
             <section id="journeyai-section">
                 <JourneyAI />
-            </section>
-            <section id="softskills-section">
-                <SoftSkills />
             </section>
 
         </div>
