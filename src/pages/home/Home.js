@@ -1,8 +1,8 @@
 import React from 'react';
-import Projects from './Projects';
-import AboutMe from './AboutMe';
-import Experience from './Experience'
-import JourneyAI from './JourneyAI'
+import Projects from '../projects/Projects';
+import AboutMe from '../aboutme/AboutMe';
+import Experience from '../experiences/Experience'
+import JourneyAI from '../journeyai/JourneyAI'
 
 const Home = () => {
     return (

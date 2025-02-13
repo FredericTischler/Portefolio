@@ -4,18 +4,18 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import JsIcon from '../icons/javascript.svg';
-import ReactIcon from '../icons/react.svg';
-import AngularIcon from '../icons/angular.svg';
-import PythonIcon from '../icons/python.svg';
-import GolangIcon from '../icons/go.svg';
-import RustIcon from '../icons/rust.svg';
-import Html5Icon from '../icons/html5.svg';
-import Css3Icon from '../icons/css3.svg';
-import MySqlIcon from '../icons/mysql.svg';
-import sqliteIcon from '../icons/sqlite.svg';
-import cIcon from '../icons/c.svg';
-import javaIcon from '../icons/java.svg'
+import JsIcon from '../../icons/javascript.svg';
+import ReactIcon from '../../icons/react.svg';
+import AngularIcon from '../../icons/angular.svg';
+import PythonIcon from '../../icons/python.svg';
+import GolangIcon from '../../icons/go.svg';
+import RustIcon from '../../icons/rust.svg';
+import Html5Icon from '../../icons/html5.svg';
+import Css3Icon from '../../icons/css3.svg';
+import MySqlIcon from '../../icons/mysql.svg';
+import sqliteIcon from '../../icons/sqlite.svg';
+import cIcon from '../../icons/c.svg';
+import javaIcon from '../../icons/java.svg'
 
 
 

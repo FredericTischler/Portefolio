@@ -2,12 +2,12 @@ import React from 'react';
 import './Projects.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
-import turingImage from '../img/turing.webp';
-import groupieImage from '../img/groupie-tracker.png'
-import lemImage from '../img/lem-in.webp'
-import wordsImage from '../img/words-shared.webp'
-import graphImage from '../img/graph.webp'
-import systemImage from '../img/client-server.webp'
+import turingImage from '../../img/turing.webp';
+import groupieImage from '../../img/groupie-tracker.png'
+import lemImage from '../../img/lem-in.webp'
+import wordsImage from '../../img/words-shared.webp'
+import graphImage from '../../img/graph.webp'
+import systemImage from '../../img/client-server.webp'
 
 
 const Projects = () => {
