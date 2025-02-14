@@ -47,7 +47,8 @@
 }
 
 .personal-info {
-    margin-top: 20px;
+    margin-top: 5%;
+    margin-left: 10%;
 }
 
 /* Personal Info */
@@ -125,8 +126,8 @@
     display: flex;
     justify-content: center;
     gap: 20px;
-    /* Adds spacing between the icons */
     width: 100%;
+    margin-bottom: 10px; /* Ajoute une petite marge en bas */
 }
 
 .social-links a {
@@ -137,7 +138,6 @@
     color: #c0c0c0;
     transition: color 0.3s ease;
     text-decoration: none;
-    margin-bottom: 10px;
 }
 
 /* Remove outline or focus effect */
@@ -160,6 +160,7 @@
         position: fixed;
         top: 0;
         left: 0;
+        background-color: rgba(0, 0, 0, 0.8);
     }
 
     .personal-info h1 {
@@ -182,4 +183,39 @@
         display: block;
         /* Ensure the button is visible */
     }
+}
+
+.left-column .rs-nav {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.left-column .rs-nav-item {
+    padding: 15px 20px;
+    color: #c0c0c0;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.left-column .rs-nav-item a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.left-column .rs-nav-item-active {
+    background-color: #ff793f;
+    color: #c0c0c0;
+}
+
+.profile-photo {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 25%;
+    margin-left: 3%;
 }

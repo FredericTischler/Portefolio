@@ -4,88 +4,71 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-
-
-
+import Nav from 'rsuite/Nav';
+import Col from 'rsuite/Col';
+import PhotoCV from '../../img/Photo-CV.png';
 
 const LeftColumn = ({ isLoggedIn }) => {
-    const [isOpen, setIsOpen] = useState(true);  // Open by default on desktop
-    const [isMobile, setIsMobile] = useState(false);  // Detect if it's mobile
-    
+    const [isOpen, setIsOpen] = useState(true);
+    const [isMobile, setIsMobile] = useState(false);
+    const [active, setActive] = useState('home');
 
-    // Function to toggle the sidebar visibility
-    const toggleSidebar = () => {
-        setIsOpen(!isOpen);  // Toggle between open and closed
+    const handleSelect = (eventKey) => {
+        setActive(eventKey);
+        const section = document.getElementById(`${eventKey}-section`);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
     };
 
-    // Detect if the device is mobile (using window width)
+    const toggleSidebar = () => {
+        setIsOpen(!isOpen);
+    };
+
     useEffect(() => {
         const handleResize = () => {
             if (window.innerWidth <= 768) {
-                setIsMobile(true);   // Mobile if width <= 768px
-                setIsOpen(false);    // Close sidebar by default on mobile
+                setIsMobile(true);
+                setIsOpen(false);
             } else {
-                setIsMobile(false);  // Not mobile
-                setIsOpen(true);     // Open sidebar by default on desktop
+                setIsMobile(false);
+                setIsOpen(true);
             }
         };
 
         window.addEventListener('resize', handleResize);
-
-        // Initial check
         handleResize();
 
-        // Cleanup event listener on component unmount
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
     return (
         <div>
-            {/* Show toggle button only on mobile when user is logged in */}
             {isMobile && (
                 <button className="toggle-button" onClick={toggleSidebar}>
                     <FontAwesomeIcon icon={faBars} />
                 </button>
             )}
-
-            {/* Sidebar with conditional class based on 'isOpen' state */}
+            <img src={PhotoCV} alt="Frédéric Tischler" className="profile-photo" />
             <div className={`left-column ${isOpen ? 'open' : 'closed'}`}>
-                {/* Personal Information */}
                 <div className="personal-info">
                     <h1>Frédéric Tischler</h1>
                     <h2>Full Stack Developer</h2>
-
-                    {/* Languages and Frameworks Logos */}
-                    {/* <div className="skills-icons">
-                        <img src={javaIcon} alt="Java" className="skill-icon" />
-                        <img src={GolangIcon} alt="GoLang" className="skill-icon" />
-                        <img src={RustIcon} alt="Rust" className="skill-icon" />
-                        <img src={cIcon} alt="C" className="skill-icon" />
-                        <img src={PythonIcon} alt="Python" className="skill-icon" />
-                        <img src={JsIcon} alt="JavaScript" className="skill-icon" />
-                        <img src={Html5Icon} alt="HTML5" className="skill-icon" />
-                        <img src={Css3Icon} alt="CSS3" className="skill-icon" />
-                        <img src={ReactIcon} alt="React" className="skill-icon" />
-                        <img src={AngularIcon} alt="Angular" className="skill-icon" />
-                        <img src={MySqlIcon} alt="MySql" className="skill-icon" />
-                        <img src={sqliteIcon} alt="Sqlite" className="skill-icon" />
-                    </div> */}
                 </div>
-
-
-
-                {/* Navigation Links */}
-                <nav className="nav-links">
-                    <ul>
-                        <li><a href="#aboutme-section">About Me</a></li>
-                        <li><a href="#projects-section">Projects</a></li>
-                        <li><a href="#experience-section">Experiences</a></li>
-                        <li><a href="#journeyai-section">Journey Into AI</a></li>
-                        <li><a href="#softskills-section">Soft Skills</a></li>
-                    </ul>
-                </nav>
-
-                {/* Social Media Links */}
+                <Col>
+                    <Nav
+                        vertical
+                        activeKey={active}
+                        onSelect={handleSelect}
+                        appearance="subtle"
+                        reversed
+                    >
+                        <Nav.Item eventKey="aboutme">About Me</Nav.Item>
+                        <Nav.Item eventKey="projects">Projects</Nav.Item>
+                        <Nav.Item eventKey="experience">Experience</Nav.Item>
+                        <Nav.Item eventKey="journeyai">Journey Into AI</Nav.Item>
+                    </Nav>
+                </Col>
                 <div className="social-links">
                     <a href="https://github.com/FredericTischler" target="_blank" rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faGithub} />
