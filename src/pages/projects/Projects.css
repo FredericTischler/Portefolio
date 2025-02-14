@@ -144,6 +144,9 @@
 
 /* Mobile adjustments */
 @media (max-width: 768px) {
+    .projects-section {
+        margin-top: 20%;
+    }
     .project-card {
         flex-direction: column;
         max-width: 100%;

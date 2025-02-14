@@ -150,40 +150,6 @@
     /* Change to orange on hover */
 }
 
-/* Media query for mobile devices */
-@media (max-width: 768px) {
-    .left-column {
-        width: 100%;
-        /* Sidebar takes full width on mobile */
-        height: auto;
-        position: fixed;
-        top: 0;
-        left: 0;
-        background-color: rgba(0, 0, 0, 0.8);
-    }
-
-    .personal-info h1 {
-        font-size: 1.8rem;
-    }
-
-    .personal-info h2 {
-        font-size: 1.4rem;
-    }
-
-    .nav-links a {
-        font-size: 1.2rem;
-    }
-
-    .social-links a {
-        font-size: 1.2rem;
-    }
-
-    .toggle-button {
-        display: block;
-        /* Ensure the button is visible */
-    }
-}
-
 .left-column .rs-nav {
     width: 100%;
     background-color: transparent;
@@ -217,4 +183,39 @@
     height: auto;
     border-radius: 25%;
     margin-left: 3%;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .left-column {
+        width: 100%;
+        height: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .personal-info h1 {
+        font-size: 1.8rem;
+    }
+
+    .personal-info h2 {
+        font-size: 1.4rem;
+    }
+
+    .left-column .rs-nav-item {
+        padding: 5px 10px;
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+        font-size: 1rem;
+    }
+
+    .social-links a {
+        font-size: 1.2rem;
+    }
+
+    .toggle-button {
+        display: block;
+    }
 }
