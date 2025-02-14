@@ -1,6 +1,6 @@
 /* Default styles for LeftColumn */
 .left-column {
-    width: 25%;
+    width: 17%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -12,7 +12,9 @@
     top: 0;
     transition: transform 0.3s ease-in-out;
     z-index: 999;
-    /* Ensure the sidebar stays above content */
+    border-right: 1px solid; /* Augmentez l'épaisseur de la bordure */
+    border-image: linear-gradient(to bottom, #ff793f, #ff6347) 1; /* Utilisez un dégradé pour la bordure */
+    box-shadow: 0 0 10px rgba(255, 123, 63, 0.5); /* Ajoutez une ombre portée */
 }
 
 /* Closed sidebar state (hidden off-screen) */
@@ -194,6 +196,7 @@
         top: 0;
         left: 0;
         background-color: rgba(0, 0, 0, 0.8);
+        border-right: none;
     }
 
     .personal-info h1 {

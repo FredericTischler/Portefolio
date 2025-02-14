@@ -22,7 +22,7 @@ const Projects = () => {
         },
         {
             name: 'Forum',
-            description: 'Développé en Go, ce forum intègre des fonctionnalités avancées comme les notifications en temps réel pour les interactions sur les posts, un suivi d’activité détaillé des utilisateurs et une authentification via Google et GitHub. Sécurisé avec HTTPS, chiffrement des mots de passe et Rate Limiting, il inclut un système de modération structuré avec différents rôles (utilisateurs, modérateurs, administrateurs) et permet l’upload d’images jusqu’à 20 Mo. Conçu dans le respect des bonnes pratiques, il a été testé pour garantir robustesse et fiabilité.',
+            description: 'Developed in Go, this forum incorporates advanced features such as real-time notifications for post interactions, detailed user activity tracking, and authentication via Google and GitHub. Secured with HTTPS, password encryption, and Rate Limiting, it includes a structured moderation system with different roles (users, moderators, administrators) and supports image uploads up to 20 MB. Designed in accordance with best practices, it has been tested to ensure robustness and reliability.',
             technologies: ['Go', 'SQLite', 'HTML/CSS'],
             githubLink: 'https://github.com/FredericTischler/Forum',
             imageUrl: forumImage,

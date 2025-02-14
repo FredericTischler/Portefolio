@@ -11,7 +11,7 @@ const Experience = () => {
     
                 I led the project from start to finish, managing both the technical and organizational aspects, and created comprehensive documentation for future maintenance.
             `,
-            technologies: ['Java Spring Boot', 'Angular', 'MySql', 'AS400', 'JavaScript', 'HTML', 'CSS', 'Bootstrap'],
+            technologies: ['Java Spring Boot', 'Angular', 'MySql', 'AS400', 'TypeScript', 'HTML', 'CSS', 'Bootstrap'],
         }
     ];
 
