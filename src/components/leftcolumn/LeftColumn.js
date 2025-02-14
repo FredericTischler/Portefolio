@@ -6,7 +6,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import Nav from 'rsuite/Nav';
 import Col from 'rsuite/Col';
-import PhotoCV from '../../img/Photo-CV.png';
+
 
 const LeftColumn = ({ isLoggedIn }) => {
     const [isOpen, setIsOpen] = useState(true);
@@ -49,7 +49,6 @@ const LeftColumn = ({ isLoggedIn }) => {
                     <FontAwesomeIcon icon={faBars} />
                 </button>
             )}
-            <img src={PhotoCV} alt="Frédéric Tischler" className="profile-photo" />
             <div className={`left-column ${isOpen ? 'open' : 'closed'}`}>
                 <div className="personal-info">
                     <h1>Frédéric Tischler</h1>

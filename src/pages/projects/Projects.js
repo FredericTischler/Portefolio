@@ -8,6 +8,7 @@ import lemImage from '../../img/lem-in.webp'
 import wordsImage from '../../img/words-shared.webp'
 import graphImage from '../../img/graph.webp'
 import systemImage from '../../img/client-server.webp'
+import forumImage from '../../img/forum.webp'
 
 
 const Projects = () => {
@@ -18,6 +19,13 @@ const Projects = () => {
             technologies: ['Java'],
             githubLink: 'https://github.com/FredericTischler/Turing-Machine',
             imageUrl: turingImage,
+        },
+        {
+            name: 'Forum',
+            description: 'Développé en Go, ce forum intègre des fonctionnalités avancées comme les notifications en temps réel pour les interactions sur les posts, un suivi d’activité détaillé des utilisateurs et une authentification via Google et GitHub. Sécurisé avec HTTPS, chiffrement des mots de passe et Rate Limiting, il inclut un système de modération structuré avec différents rôles (utilisateurs, modérateurs, administrateurs) et permet l’upload d’images jusqu’à 20 Mo. Conçu dans le respect des bonnes pratiques, il a été testé pour garantir robustesse et fiabilité.',
+            technologies: ['Go', 'SQLite', 'HTML/CSS'],
+            githubLink: 'https://github.com/FredericTischler/Forum',
+            imageUrl: forumImage,
         },
         {
             name: 'Groupie Tracker',
