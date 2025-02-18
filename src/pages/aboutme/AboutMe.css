@@ -94,6 +94,34 @@
     width: 150px;
 }
 
+.cv-link {
+    color: #61dafb;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.download-cv-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff793f;
+    color: #e5e5e5;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.download-cv-button:hover {
+    transform: scale(1.05);
+}
+
 @media (max-width: 768px) {
     .about-me-container {
         flex-direction: column;

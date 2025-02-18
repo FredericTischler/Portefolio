@@ -40,6 +40,11 @@ const AboutMe = () => {
                     <p>
                         Passionate about AI, I aim to develop a model for financial market prediction. Currently seeking an apprenticeship to further enhance my skills.
                     </p>
+                    <p>
+                        <a href="../../img/CV_Frederic_Tischler.pdf" download="FredericTischler_CV.pdf" className="cv-link">
+                            <button className="download-cv-button">Download My CV</button>
+                        </a>
+                    </p>
                 </div>
             </div>
             <div style={{ height: '300px', width: '97%', position: 'absolute' }}>
