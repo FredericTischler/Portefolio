@@ -4,7 +4,7 @@ import './journeyAI.css';
 const JourneyAI = () => {
     return (
         <section id="journey-ai" className="journey-ai-section">
-            <h2 className="section-title">Journey into AI</h2>
+            <h2 className="section-title">Ambition</h2>
 
             {/* Timeline for AI goals */}
             <div className="timeline">
@@ -39,7 +39,7 @@ const JourneyAI = () => {
 
             {/* Interactive Skills Section */}
             <div className="skills-section">
-                <h2 className="section-title">Skills to Acquire</h2>
+                <h2 className="section-title">Journey into AI</h2>
                 <div className="skills-container">
                     <div className="skill">
                         <span>Python</span>

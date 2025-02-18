@@ -35,9 +35,10 @@ const AboutMe = () => {
             <div className="about-me-container">
                 <div className="about-me-card">
                     <p>
-                        I am a passionate full-stack developer with a solid academic background in computer science. I hold a Bachelor's degree in Computer Science from the University of Rouen and have further developed my skills through specialized training in Application Development and Design at Zone01.
-                        My expertise spans both front-end and back-end technologies, allowing me to build scalable, efficient applications. Throughout my experience, I have worked with various programming languages and frameworks, including Java, C, C++, Rust, Go, Angular, React, JavaScript, HTML/CSS, and more.
-                        Driven by a deep passion for technology, I focus on creating dynamic, user-centered applications that not only meet technical requirements but also enhance the user experience.
+                        Computer Science graduate and currently training at Zone01, I have strong experience in full-stack development with Java Spring and Angular.
+                    </p>
+                    <p>
+                        Passionate about AI, I aim to develop a model for financial market prediction. Currently seeking an apprenticeship to further enhance my skills.
                     </p>
                 </div>
             </div>

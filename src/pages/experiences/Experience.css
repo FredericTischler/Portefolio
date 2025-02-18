@@ -5,6 +5,7 @@
     text-align: center;
     color: #c8d6e5;
     /* Light blue-gray color for text */
+    margin-top: 7%;
 }
 
 /* Container for Experience */
@@ -60,8 +61,8 @@
 .experience-card p {
     font-size: 1rem;
     line-height: 1.6;
-    color: #c0c0c0;
-    /* Light color for readability */
+    color: #e5e5e5;
+    text-shadow: 3px 1px 2px rgba(0, 0, 0, 0.5);
     margin-bottom: 15px;
 }
 

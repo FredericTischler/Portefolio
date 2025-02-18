@@ -63,9 +63,9 @@ const LeftColumn = ({ isLoggedIn }) => {
                         reversed
                     >
                         <Nav.Item eventKey="aboutme">About Me</Nav.Item>
-                        <Nav.Item eventKey="projects">Projects</Nav.Item>
                         <Nav.Item eventKey="experience">Experience</Nav.Item>
-                        <Nav.Item eventKey="journeyai">Journey Into AI</Nav.Item>
+                        <Nav.Item eventKey="projects">Projects</Nav.Item>
+                        <Nav.Item eventKey="journeyai">Ambition</Nav.Item>
                     </Nav>
                 </Col>
                 <div className="social-links">
