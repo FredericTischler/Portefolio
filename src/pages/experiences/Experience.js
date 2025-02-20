@@ -1,4 +1,5 @@
 import React from 'react';
+import { Chip, Box } from '@mui/material';
 import './Experience.css';
 
 const Experience = () => {
@@ -26,11 +27,15 @@ const Experience = () => {
                         <h3>{experience.company}</h3>
                         <p><strong>Duration:</strong> {experience.duration}</p>
                         <p>{experience.description}</p>
-                        <div className="technologies">
+                        <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1, marginBottom: '10px' }}>
                             {experience.technologies.map((tech, techIndex) => (
-                                <span key={techIndex} className="tech-badge">{tech}</span>
+                                <Chip key={techIndex} label={tech} variant="outlined" sx={{
+                                    color: '#ff793f',
+                                    borderColor: '#ff793f',
+                                    '&:hover': { backgroundColor: '#ff793f', color: 'white' }
+                                }} />
                             ))}
-                        </div>
+                        </Box>
                     </div>
                 ))}
             </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import './Projects.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Chip, Box } from '@mui/material';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import turingImage from '../../img/turing.webp';
 import groupieImage from '../../img/groupie-tracker.png'
@@ -74,11 +75,15 @@ const Projects = () => {
                         <div className="project-content"> {/* Text on the right */}
                             <h3>{project.name}</h3>
                             <p>{project.description}</p>
-                            <div className="technologies">
+                            <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 1, marginBottom: '10px' }}>
                                 {project.technologies.map((tech, techIndex) => (
-                                    <span key={techIndex} className="tech-badge">{tech}</span>
+                                    <Chip key={techIndex} label={tech} variant="outlined" sx={{
+                                        color: '#ff793f',
+                                        borderColor: '#ff793f',
+                                        '&:hover': { backgroundColor: '#ff793f', color: 'white' }
+                                    }} />
                                 ))}
-                            </div>
+                            </Box>
                             <a href={project.githubLink} target="_blank" rel="noopener noreferrer" className="github-link">
                                 <FontAwesomeIcon icon={faGithub} /> View on GitHub
                             </a>
